@@ -1,0 +1,131 @@
+.Container-Card {
+  width: 80%;
+  height: 500px;
+  margin-top: 20px;
+}
+.Container_Card-Info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.Container_Card-Info > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-bottom: 10px;
+}
+.Container_Card-InfoData > h2 {
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0 0 10px;
+}
+.Container_Card-InfoData > a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Container_Card-InfoData > p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.Container-Data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.Container-Data > p {
+  display: flex;
+  align-content: center;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+.Container-Data > p > svg {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  color: rgb(218, 218, 218);
+}
+.Container-Dara-important {
+  display: none;
+}
+.Container-follows-respon > svg {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  color: rgb(218, 218, 218);
+}
+.Container-follows-respon {
+  display: flex;
+  align-items: center;
+}
+.Container-follows-respon > p {
+  margin-left: 5px;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .Container-follows-respon {
+    display: none;
+  }
+  .Container-Dara-important {
+    display: block;
+  }
+  .Container-follows {
+    text-align: center;
+    margin: 10px;
+  }
+  .Container-follows > p {
+    font-size: 1.5rem;
+  }
+  .Container-follows > h2 {
+    font-size: 2rem;
+  }
+  .Container_Card-Info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .Container-Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+  }
+  .Container-Dara-important {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 100px;
+    align-items: center;
+    border-radius: 10px;
+    align-content: center;
+  }
+  .Container-Dara-important.Dark {
+    background-color: rgba(86, 0, 245, 0.315);
+  }
+  .Container-Dara-important.Light {
+    background-color: rgba(89, 0, 255, 0.5);
+  }
+  .Container_Card-Info > img {
+    margin: 30px;
+  }
+  .Container_Data-Center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
