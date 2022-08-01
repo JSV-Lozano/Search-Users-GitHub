@@ -68,11 +68,11 @@ function Data({ dataGitHub }) {
             </p>
           )}
           {dataGitHub.followers === null ? null : (
-                 <div className="Container-follows-respon">
-                 <VscAccount />
-                 <h2>Following:</h2>
-                 <p>{dataGitHub.followers}</p>
-               </div>
+            <div className="Container-follows-respon">
+              <VscAccount />
+              <h2>Following:</h2>
+              <p>{dataGitHub.followers}</p>
+            </div>
           )}
           {dataGitHub.following === null ? null : (
             <div className="Container-follows-respon">

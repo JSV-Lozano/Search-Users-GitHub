@@ -2,7 +2,7 @@ import React from "react";
 
 const ThemeContext = React.createContext();
 
-//create theme light and dark
+//Light and Dark Mode
 
 function ThemeProvider({ children }) {
   const [theme, setTheme] = React.useState("Light");

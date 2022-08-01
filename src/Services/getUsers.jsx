@@ -17,9 +17,8 @@ function getUsers() {
         );
         setDataGitHub(response.data);
         setLoading(false);
-        console.log(response.data);
       } catch (error) {
-        setErrors(error)
+        setErrors(error);
         console.log(errors);
         if (error.response.data.message === "Not Found") {
           setValue("octocat");
@@ -27,10 +26,8 @@ function getUsers() {
         }
       }
     }
-    console.log(dataGitHub);
     fetchData();
   }, [effect]);
-  console.log(value);
   return {
     setLoading,
     setValue,
