@@ -21,7 +21,7 @@ function getUsers() {
         setErrors(error);
         console.log(errors);
         if (error.response.data.message === "Not Found") {
-          setValue("octocat");
+          setValue("jsv-lozano");
           setEffect(!effect);
         }
       }

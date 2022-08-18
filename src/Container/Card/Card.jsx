@@ -3,6 +3,7 @@ import { Data } from "../InfoData/Data";
 import styles from "../../Styles/Card.css";
 
 function Card({ dataGitHub }) {
+  console.log(dataGitHub.login);
   return (
     <>
       <div className="Container-Card">
@@ -10,7 +11,7 @@ function Card({ dataGitHub }) {
           <img src={dataGitHub.avatar_url} alt="" />
           <div className="Container_Card-InfoData">
             <h2>{dataGitHub.name}</h2>
-            <a href={dataGitHub.login} target="_blank">
+            <a href={`https://github.com/${dataGitHub.login}`} target="_blank">
               @{dataGitHub.login}
             </a>
             <p>{dataGitHub.created_at}</p>
